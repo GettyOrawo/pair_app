@@ -1,24 +1,16 @@
-# README
+# Our awesome pair app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## To Dos
 
-Things you may want to cover:
+* Create static pages
+* Test static pages
+* User model including validations
+* sign up 
+* Updating, showing, and deleting users
+* login,logout and remember
+* account activation
+* password reset
+* associtated microposts
+* follow other users
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+> All the above are subject to change. Expect more from us!
