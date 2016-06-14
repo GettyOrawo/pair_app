@@ -1,0 +1,2 @@
+module PairStaticPagesHelper
+end
