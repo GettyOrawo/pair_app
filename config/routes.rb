@@ -5,5 +5,9 @@ Rails.application.routes.draw do
 
   get 'pair_static_pages/about'
 
+  get 'pair_static_pages/contact'
+
+  get 'pair_static_pages/FAQ'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
