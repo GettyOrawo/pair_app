@@ -10,27 +10,27 @@ class PairStaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get help" do
-    get pair_static_pages_help_url
+    get help_url
     assert_response :success
     assert_select 'h1', "Our Help Page"
     assert_select 'title', 'Welcome to awesomeness | Help'
   end
 
   test "should get about" do
-    get pair_static_pages_about_url
+    get about_url
     assert_response :success
     assert_select 'title', 'Welcome to awesomeness | About'
     assert_select 'h1', 'Our About Page'
   end
 
   test "should get contact" do
-    get pair_static_pages_contact_url
+    get contact_url
     assert_response :success
     assert_select 'p', /Find us on/i
 end
 
 test "should get FAQ" do
-  get pair_static_pages_FAQ_url
+  get faq_url
   assert_response :success
   assert_select 'h1', 'Frequently Asked Questions'
   assert_select 'p', 'a question'
