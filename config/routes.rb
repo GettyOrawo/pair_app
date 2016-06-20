@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :users
+  # get 'users/new'
+  # post 'users/create'
+  # get 'user' => 'users/show'
+
   root 'pair_static_pages#home'
 
   get 'help' => 'pair_static_pages#help'
