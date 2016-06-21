@@ -3,15 +3,14 @@ class UsersController < ApplicationController
     @user = User.new
   end
   def create
-   user = User.new(user_params) 
-   user.save
-   redirect_to new_user_path
+   @user = User.new(user_params) 
+   @user.save
+   redirect_to @user
   end
 
   def show
     @user = User.find_by(id: params[:id])
   end
-
 
   private
 

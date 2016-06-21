@@ -18,4 +18,15 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     get user_path(getty)
   end
 
+  test 'should redirect to created user' do
+    post users_url, params: {
+      user: {
+        name: "getty",
+        email: "gee@gee.gee"
+        }
+
+    
+  }
+    assert_redirected_to User.last
+  end
 end
