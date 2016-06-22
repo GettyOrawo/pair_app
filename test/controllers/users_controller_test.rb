@@ -1,3 +1,4 @@
+
 require 'test_helper'
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
@@ -28,5 +29,18 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     
   }
     assert_redirected_to User.last
+  end
+
+  test "should refuse empty name or email" do
+    post users_url, params: {
+      user: {
+        name: "",
+        email: ""
+        }
+
+    
+  }
+  assert_template 'users/new'
+  assert_select 'li', /blank/i
   end
 end
